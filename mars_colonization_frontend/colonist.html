@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colonist Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="colonist.html">Colonists</a></li>
+            <li><a href="dependent.html">Dependents</a></li>
+            <li><a href="ejet.html">E-Jets</a></li>
+            <li><a href="trip.html">Trips</a></li>
+            <li><a href="house.html">Houses</a></li>
+            <li><a href="job.html">Jobs</a></li>
+            <li><a href="colonistjob.html">Colonist Jobs</a></li>
+        </ul>
+    </nav>
+
+    <h1>Colonist Management</h1>
+
+    <div class="form-container">
+        <form id="colonist-form">
+            <label for="MarsColonizationID">Mars Colonization ID:</label>
+            <input type="text" id="MarsColonizationID" name="MarsColonizationID" required>
+
+            <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" name="FirstName" required>
+
+            <label for="MiddleName">Middle Name:</label>
+            <input type="text" id="MiddleName" name="MiddleName" required>
+
+            <label for="Surname">Surname:</label>
+            <input type="text" id="Surname" name="Surname" required>
+
+            <label for="DateOfBirth">Date of Birth:</label>
+            <input type="date" id="DateOfBirth" name="DateOfBirth" required>
+
+            <label for="Qualification">Qualification:</label>
+            <input type="text" id="Qualification" name="Qualification" required>
+
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required>
+
+            <label for="EarthAddress">Earth Address:</label>
+            <input type="text" id="EarthAddress" name="EarthAddress" required>
+
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="ContactNo">Contact Number:</label>
+            <input type="text" id="ContactNo" name="ContactNo" required>
+
+            <label for="CivilStatus">Civil Status:</label>
+            <select id="CivilStatus" name="CivilStatus" required>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
+            </select>
+
+            <label for="FamilyMembersCount">Family Members Count:</label>
+            <input type="number" id="FamilyMembersCount" name="FamilyMembersCount" required>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="update-button">Update</button>
+            <button type="button" id="delete-button">Delete</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <h2>Colonist List</h2>
+        <table id="colonist-table">
+            <thead>
+            <tr>
+                <th>Mars Colonization ID</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Surname</th>
+                <th>Date of Birth</th>
+                <th>Qualification</th>
+                <th>Age</th>
+                <th>Earth Address</th>
+                <th>Gender</th>
+                <th>Contact No</th>
+                <th>Civil Status</th>
+                <th>Family Members Count</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Data will be populated by JS -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="colonist.js"></script>
+</body>
+</html>

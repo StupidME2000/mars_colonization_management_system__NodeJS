@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="colonist.html">Colonists</a></li>
+            <li><a href="dependent.html">Dependents</a></li>
+            <li><a href="ejet.html">E-Jets</a></li>
+            <li><a href="trip.html">Trips</a></li>
+            <li><a href="house.html">Houses</a></li>
+            <li><a href="job.html">Jobs</a></li>
+            <li><a href="colonistjob.html">Colonist Jobs</a></li>
+        </ul>
+    </nav>
+
+    <h1>Job Management</h1>
+
+    <div class="form-container">
+        <form id="job-form">
+            <label for="jobid">Job ID:</label>
+            <input type="text" id="jobid" name="jobid" required>
+
+            <label for="jobtitle">Job Title:</label>
+            <input type="text" id="jobtitle" name="jobtitle" required>
+
+            <label for="jobdescription">Job Description:</label>
+            <input type="text" id="jobdescription" name="jobdescription" required>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="update-button">Update</button>
+            <button type="button" id="delete-button">Delete</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <h2>Job List</h2>
+        <table id="job-table">
+            <thead>
+            <tr>
+                <th>Job ID</th>
+                <th>Job Title</th>
+                <th>Job Description</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Data will be populated by JS -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="job.js"></script>
+</body>
+</html>
